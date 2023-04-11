@@ -15,6 +15,6 @@ def solution(x_success: int,
   z = (p1 - p2) / math.sqrt(p1*(1-p1)/x_success + p2*(1-p2)/y_success)
   z_alpha = abs(norm.ppf(alpha/2))
   if abs(z) > z_alpha:
-    return False
-  else:
     return True
+  else:
+    return False
